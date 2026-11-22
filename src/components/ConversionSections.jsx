@@ -25,7 +25,7 @@ export default function ConversionSections({ onOpenWishlist, onOpenContact }) {
 
   return (
     <>
-      {/* 9. Sección Wishlist */}
+      {/*Sección Wishlist */}
       <section
         id="wishlist-cta"
         className="py-16 lg:py-24 bg-gradient-to-r from-[#ee2a27]/90 via-[#9e2238] to-[#1f2252] border-y-2 border-yellow-400/60"
@@ -68,7 +68,7 @@ export default function ConversionSections({ onOpenWishlist, onOpenContact }) {
         </div>
       </section>
 
-      {/* 10. Sección Suscripción */}
+      {/*Sección Suscripción */}
       <section id="comunidad" className="py-16 lg:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <div className="rounded-3xl bg-[#121433]/85 border border-white/15 p-8 sm:p-12 space-y-5">
@@ -107,7 +107,7 @@ export default function ConversionSections({ onOpenWishlist, onOpenContact }) {
         </div>
       </section>
 
-      {/* 11. Sección Sponsorship */}
+      {/* Sección Sponsorship */}
       <section id="sponsors" className="py-16 lg:py-24 bg-[#121433]/60 border-t border-white/10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="rounded-3xl border-2 border-yellow-400/40 bg-gradient-to-br from-[#1f2252] to-[#121433] p-8 sm:p-12 lg:p-14 flex flex-col lg:flex-row items-center justify-between gap-8">

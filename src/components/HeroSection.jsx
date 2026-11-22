@@ -51,7 +51,7 @@ export default function HeroSection({
             </div>
           </div>
 
-          {/* Columna Derecha: Logo PNG transparente centrado + Insignia centrada abajo */}
+          {/* Columna Derecha */}
           <div className="lg:col-span-6">
             <div className="mx-auto max-w-xl flex flex-col items-center space-y-4">
               <img

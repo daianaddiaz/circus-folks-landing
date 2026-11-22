@@ -6,7 +6,7 @@ export default function GameplayFeatures() {
   return (
     <section id="cooperativo" className="py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
-        {/* 7. Juega con tus amigos */}
+        {/* Juega con tus amigos */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           <div className="lg:col-span-6">
             <div className="rounded-2xl overflow-hidden border-2 border-yellow-400/50 bg-[#121433] aspect-[16/10] shadow-2xl group">

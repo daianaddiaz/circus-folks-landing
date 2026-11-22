@@ -5,7 +5,7 @@ import { SteamIcon } from './BrandIcons';
 export default function RewardsAndSupport({ onOpenWishlist }) {
   return (
     <>
-      {/* 5. Cosméticos de bienvenida */}
+      {/*Cosméticos de bienvenida */}
       <section id="cosmeticos" className="py-16 lg:py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="ticket-card rounded-3xl p-8 sm:p-12 overflow-hidden">
@@ -66,7 +66,7 @@ export default function RewardsAndSupport({ onOpenWishlist }) {
         </div>
       </section>
 
-      {/* 6. Ayudanos a crecer (CafecitoApp) */}
+      {/*Ayudanos a crecer (CafecitoApp) */}
       <section className="py-12 lg:py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <div className="rounded-2xl bg-white/5 backdrop-blur-md border border-white/15 p-8 sm:p-10 space-y-5">

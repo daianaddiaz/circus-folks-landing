@@ -18,7 +18,7 @@ const SOCIAL_CHANNELS = [
 export default function LoreAndCommunity() {
   return (
     <>
-      {/* 3. Te damos la bienvenida a Circus Folks */}
+      {/* Te damos la bienvenida a Circus Folks */}
       <section id="bienvenida" className="py-16 lg:py-24 bg-[#121433]/40 border-y border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
@@ -77,7 +77,7 @@ export default function LoreAndCommunity() {
         </div>
       </section>
 
-      {/* 4. Sección JOIN US */}
+      {/*Sección JOIN US */}
       <section id="join-us" className="py-16 lg:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <span className="text-xs uppercase tracking-[0.3em] text-yellow-400 font-bold">
