@@ -1,11 +1,12 @@
 import React from 'react';
-import { MoonStar, Compass, Hammer, Sparkles } from 'lucide-react';
+import { Compass, Hammer, Sparkles } from 'lucide-react';
 import {
   YouTubeIcon,
   TikTokIcon,
   DiscordIcon,
   InstagramIcon,
 } from './BrandIcons';
+import fondoCaravana from '../assets/fondo-caravana.webp';
 
 const SOCIAL_CHANNELS = [
   { name: 'YouTube', href: '', Icon: YouTubeIcon },
@@ -22,15 +23,13 @@ export default function LoreAndCommunity() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             <div className="lg:col-span-5">
-              <div className="rounded-2xl overflow-hidden border-2 border-yellow-400/40 bg-[#1f2252]">
-                <div className="aspect-[4/3] bg-gradient-to-b from-[#2b2d42] to-[#121433] flex flex-col items-center justify-center p-8 text-center">
-                  <MoonStar className="w-16 h-16 text-yellow-400/80 mb-4" />
-                  <span className="font-display-circus text-2xl text-white tracking-wider">
-                    EL GRAN APAGÓN
-                  </span>
-                  <span className="text-xs text-white/60 mt-2">
-                    [Ilustración narrativa: Ciudades grises iluminadas por la llegada de la caravana]
-                  </span>
+              <div className="rounded-2xl overflow-hidden border-2 border-yellow-400/50 bg-[#1f2252] shadow-2xl">
+                <div className="aspect-[4/3] overflow-hidden bg-[#121433]">
+                  <img
+                    src={fondoCaravana}
+                    alt="El Gran Apagón - Ciudades grises iluminadas por la llegada de la caravana"
+                    className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-[1.03]"
+                  />
                 </div>
                 <div className="bg-yellow-400 text-[#1f2252] py-2.5 px-4 text-center font-display-circus text-lg tracking-wider">
                   UNA LUZ EN MEDIO DE LA APATÍA
@@ -47,7 +46,7 @@ export default function LoreAndCommunity() {
               </h2>
 
               <blockquote className="border-l-4 border-yellow-400 pl-5 py-2 bg-white/5 rounded-r-xl text-base sm:text-lg text-white/95 leading-relaxed">
-                “Tras “El Gran Apagón”, la humanidad se quedó a oscuras y sin pantallas: las ciudades cayeron en la apatía de perder toda forma de entretenimiento moderno. En medio de ésta masa gris y aburrida, surge una luz itinerante: un grupo de artistas que redescubren la magia de la actuación en vivo para llenar ese enorme vacío existencial”
+                Tras “El Gran Apagón”, la humanidad se quedó a oscuras y sin pantallas: las ciudades cayeron en la apatía de perder toda forma de entretenimiento moderno. En medio de ésta masa gris y aburrida, surge una luz itinerante: un grupo de artistas que redescubren la magia de la actuación en vivo para llenar ese enorme vacío existencial.
               </blockquote>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
@@ -92,20 +91,20 @@ export default function LoreAndCommunity() {
           </p>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-2xl mx-auto">
-            {SOCIAL_CHANNELS.map((social) => (
-            <a
-                key={social.name}
-                href={social.href || '#join-us'}
-                aria-label={social.name}
+            {SOCIAL_CHANNELS.map(({ name, href, Icon }) => (
+              <a
+                key={name}
+                href={href || '#join-us'}
+                aria-label={name}
                 className="group flex flex-col items-center justify-center p-6 rounded-2xl bg-[#121433]/80 border-2 border-white/15 hover:border-yellow-400 hover:-translate-y-1.5 transition-all"
-            >
-            <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-3 group-hover:bg-yellow-400 group-hover:text-[#1f2252] transition-colors">
-                <social.Icon className="w-6 h-6" />
-            </div>
-            <span className="font-display-circus text-lg tracking-wide group-hover:text-yellow-400">
-                {social.name}
-            </span>
-            </a>
+              >
+                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-3 group-hover:bg-yellow-400 group-hover:text-[#1f2252] transition-colors">
+                  <Icon className="w-6 h-6" />
+                </div>
+                <span className="font-display-circus text-lg tracking-wide group-hover:text-yellow-400">
+                  {name}
+                </span>
+              </a>
             ))}
           </div>
         </div>

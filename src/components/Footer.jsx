@@ -1,11 +1,11 @@
 import React from 'react';
-import { Tent } from 'lucide-react';
 import {
   YouTubeIcon,
   TikTokIcon,
   DiscordIcon,
   InstagramIcon,
 } from './BrandIcons';
+import logoCircus from '../assets/logo-circus.webp';
 
 const TEAM_MEMBERS = [
   'Kevin Alemanno',
@@ -27,26 +27,30 @@ export default function Footer() {
     <footer className="bg-[#0d0f26] border-t border-yellow-400/30 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+          {/* Logo en Footer */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-[#ee2a27] border border-yellow-400 flex items-center justify-center">
-              <Tent className="w-5 h-5 text-yellow-400" />
-            </div>
+            <img
+              src={logoCircus}
+              alt="Logo Circus Folks"
+              className="h-11 w-auto object-contain"
+            />
             <span className="font-display-circus text-2xl tracking-wider text-white">
               CIRCUS FOLKS
             </span>
           </div>
-            <div className="flex items-center gap-3">
+
+          <div className="flex items-center gap-3">
             {FOOTER_SOCIALS.map(({ name, href, Icon }) => (
-                <a
+              <a
                 key={name}
                 href={href}
                 aria-label={name}
                 className="w-10 h-10 rounded-full bg-white/10 hover:bg-yellow-400 hover:text-[#1f2252] flex items-center justify-center transition-colors"
-                >
+              >
                 <Icon className="w-5 h-5" />
-                </a>
+              </a>
             ))}
-            </div>
+          </div>
         </div>
 
         <hr className="border-white/10" />

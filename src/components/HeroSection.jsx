@@ -1,24 +1,23 @@
 import React from 'react';
 import {
   PlayCircle,
-  MessageSquare,
-  Flame,
-  Users,
-  Zap,
   Monitor,
-  Gamepad2,
   Star,
 } from 'lucide-react';
 import { DiscordIcon, SteamIcon } from './BrandIcons';
+import heroImg from '../assets/logo-completo-circus.png';
 
-export default function HeroSection({ onOpenTrailer, onOpenWishlist }) {
+export default function HeroSection({
+  onOpenTrailer,
+  onOpenWishlist,
+}) {
   return (
     <section className="relative pt-12 pb-16 lg:pt-20 lg:pb-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          {/* Copy & CTAs */}
+          {/* Columna Izquierda: Copy & CTAs */}
           <div className="lg:col-span-6 space-y-6 text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#121433]/70 border border-yellow-400/50 text-yellow-400 text-xs sm:text-sm">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#121433]/80 border border-yellow-400/50 text-yellow-400 text-xs sm:text-sm">
               <span className="w-2 h-2 rounded-full bg-yellow-400 animate-ping" />
               <span>Estrategia, Supervivencia y Espectáculo en Primera Persona</span>
             </div>
@@ -44,45 +43,27 @@ export default function HeroSection({ onOpenTrailer, onOpenWishlist }) {
 
               <a
                 href="#join-us"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#121433]/80 hover:bg-[#121433] text-white border-2 border-white/30 hover:border-yellow-400 font-display-circus text-xl px-8 py-4 rounded-xl transition-all"
-                >
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#121433]/85 hover:bg-[#121433] text-white border-2 border-white/30 hover:border-yellow-400 font-display-circus text-xl px-8 py-4 rounded-xl transition-all"
+              >
                 <DiscordIcon className="w-6 h-6 text-yellow-400" />
                 <span>DISCORD</span>
-                </a>
+              </a>
             </div>
           </div>
 
-          {/* Espacio para Mockup / Arte */}
+          {/* Columna Derecha: Logo PNG transparente centrado + Insignia centrada abajo */}
           <div className="lg:col-span-6">
-            <div className="relative mx-auto max-w-xl">
-              <div className="relative rounded-2xl overflow-hidden border-4 border-yellow-400/80 bg-[#121433] aspect-[16/10] group">
-                <div className="absolute inset-0 bg-gradient-to-tr from-[#1f2252] via-[#3b1d3e] to-[#ee2a27]/80 flex flex-col items-center justify-center p-6 text-center">
-                  <div className="relative z-10 w-24 h-24 rounded-full bg-[#121433]/90 border-2 border-yellow-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-500">
-                    <Flame className="w-12 h-12 text-yellow-400" />
-                  </div>
-                  <span className="relative z-10 font-display-circus text-2xl sm:text-3xl text-yellow-400 tracking-wider">
-                    LA CARPA DE LA ESPERANZA
-                  </span>
-                  <p className="relative z-10 text-xs sm:text-sm text-white/80 mt-2 max-w-sm">
-                    [Key Art / Gameplay Mockup: Vista en primera persona dirigiendo el espectáculo bajo las luces de la carpa]
-                  </p>
-                  <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between bg-black/60 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/15 text-xs">
-                    <span className="flex items-center gap-1.5 text-yellow-400">
-                      <Users className="w-4 h-4" /> Troupe: 4 Artistas
-                    </span>
-                    <span className="flex items-center gap-1.5 text-emerald-400">
-                      <Zap className="w-4 h-4" /> Moral del Público: 94%
-                    </span>
-                  </div>
-                </div>
-              </div>
+            <div className="mx-auto max-w-xl flex flex-col items-center space-y-4">
+              <img
+                src={heroImg}
+                alt="Circus Folks"
+                className="w-full h-auto object-contain drop-shadow-[0_22px_28px_rgba(0,0,0,0.72)] transition-transform duration-500 hover:scale-[1.02]"
+              />
 
-              <div className="hidden sm:flex items-center gap-2 absolute -bottom-4 -left-4 bg-[#121433] border border-yellow-400 px-4 py-2 rounded-lg shadow-xl">
-                <Monitor className="w-5 h-5 text-yellow-400" />
-                <span className="text-xs font-bold uppercase tracking-wider">
-                  PC • Estrategia & Simulación
-                </span>
-              </div>
+              <span className="inline-flex items-center justify-center gap-2 bg-[#121433]/90 border border-yellow-400/60 text-yellow-400 px-3.5 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider">
+                <Monitor className="w-4 h-4" />
+                <span>PC • Estrategia & Simulación</span>
+              </span>
             </div>
           </div>
         </div>
@@ -93,7 +74,7 @@ export default function HeroSection({ onOpenTrailer, onOpenWishlist }) {
             <div className="flex items-center gap-4 text-center md:text-left flex-col sm:flex-row">
               <div className="w-14 h-14 rounded-xl bg-yellow-400/15 border border-yellow-400 flex items-center justify-center shrink-0">
                 <SteamIcon className="w-8 h-8 text-yellow-400" />
-                </div>
+              </div>
               <div>
                 <span className="text-xs uppercase tracking-[0.2em] text-yellow-400 font-bold block mb-1">
                   ★ Reserva tu lugar en primera fila ★
