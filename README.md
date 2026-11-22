@@ -17,25 +17,13 @@ Landing page oficial promocional para **Circus Folks**, un videojuego indie de e
 
 ## Estructura del Proyecto
 
-circus-folks/
-├── .github/
-│   └── workflows/
-│       └── deploy.yml          # Workflow de build y despliegue a GitHub Pages
-├── index.html
-├── vite.config.js
-└── src/
-    ├── assets/                 # Imágenes y recursos gráficos importados por Vite
-    ├── components/
-    │   ├── BrandIcons.jsx      # Íconos de redes y plataformas (Steam, Discord, etc.)
-    │   ├── Navbar.jsx          # Navegación superior y acceso rápido a Wishlist
-    │   ├── HeroSection.jsx     # Portada, CTA principal, logo y destaque de Steam Wishlist
-    │   ├── LoreAndCommunity.jsx# Historia ("El Gran Apagón") y canales de comunidad ("Join Us")
-    │   ├── RewardsAndSupport.jsx# Cosméticos de bienvenida y apoyo en CafecitoApp
-    │   ├── GameplayFeatures.jsx# Mecánicas cooperativas y planificación de roles
-    │   ├── ConversionSections.jsx# Llamados a Wishlist, newsletter y contacto para sponsorship
-    │   ├── Footer.jsx          # Créditos del equipo, enlaces y cierre
-    │   └── Modals.jsx          # Modales interactivos (tráiler, código promo, contacto)
-    ├── styles/
-    │   └── circus.css
-    ├── App.jsx
-    └── main.jsx
+# Workflow de build y despliegue a GitHub Pages
+# Imágenes y recursos gráficos importados por Vite
+# Íconos de redes y plataformas (Steam, Discord, etc.)
+# Portada, CTA principal, logo y destaque de Steam Wishlist
+# Historia ("El Gran Apagón") y canales de comunidad ("Join Us")
+# Cosméticos de bienvenida y apoyo en CafecitoApp
+# Mecánicas cooperativas y planificación de roles
+# Llamados a Wishlist, newsletter y contacto para sponsorship
+# Créditos del equipo, enlaces y cierre
+# Modales interactivos (tráiler, código promo, contacto)
