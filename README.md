@@ -1,16 +1,41 @@
-# React + Vite
+# Circus Folks — Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Landing page oficial promocional para **Circus Folks**, un videojuego indie de estrategia, simulación y supervivencia en primera persona ambientado tras *El Gran Apagón*. El proyecto está orientado a impulsar **wishlists en Steam**, el crecimiento de la comunidad y el contacto con sponsors o inversores.
 
-Currently, two official plugins are available:
+## Stack Tecnológico
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Framework / Bundler:** React + Vite (`base: '/circus-folks-landing/'` en `vite.config.js`)
+* **Estilos:** Tailwind CSS + estilos personalizados en `src/styles/circus.css`
+* **Iconografía:** `lucide-react` y `react-icons`
+* **Tipografías:** `Sancreek` (títulos y display circense) y `Domine` (cuerpo de texto), cargadas desde Google Fonts en `index.html`
+* **Despliegue:** GitHub Pages automatizado mediante GitHub Actions
 
-## React Compiler
+## Identidad Visual
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Paleta principal:** `#ee2a27` (rojo carpa), `#1f2252` (azul profundo) y `#facc15` (amarillo / dorado)
+* **Estilo:** Estética de circo itinerante con franjas sutiles, bordes tipo marquesina y tarjetas con efecto entrada/boleto
 
-## Expanding the Oxlint configuration
+## Estructura del Proyecto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+circus-folks/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml          # Workflow de build y despliegue a GitHub Pages
+├── index.html
+├── vite.config.js
+└── src/
+    ├── assets/                 # Imágenes y recursos gráficos importados por Vite
+    ├── components/
+    │   ├── BrandIcons.jsx      # Íconos de redes y plataformas (Steam, Discord, etc.)
+    │   ├── Navbar.jsx          # Navegación superior y acceso rápido a Wishlist
+    │   ├── HeroSection.jsx     # Portada, CTA principal, logo y destaque de Steam Wishlist
+    │   ├── LoreAndCommunity.jsx# Historia ("El Gran Apagón") y canales de comunidad ("Join Us")
+    │   ├── RewardsAndSupport.jsx# Cosméticos de bienvenida y apoyo en CafecitoApp
+    │   ├── GameplayFeatures.jsx# Mecánicas cooperativas y planificación de roles
+    │   ├── ConversionSections.jsx# Llamados a Wishlist, newsletter y contacto para sponsorship
+    │   ├── Footer.jsx          # Créditos del equipo, enlaces y cierre
+    │   └── Modals.jsx          # Modales interactivos (tráiler, código promo, contacto)
+    ├── styles/
+    │   └── circus.css
+    ├── App.jsx
+    └── main.jsx
