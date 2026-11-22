@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background: linear-gradient(165deg, #ee2a27 0%, #89263c 24%, #1f2252 55%, #141638 100%);
+    color: #ffffff;
+    font-family: 'Domine', serif;
+    overflow-x: hidden;
+  }
+
+  body ::selection {
+    background-color: #facc15;
+    color: #1f2252;
+  }
+}
+
+.font-display-circus {
+  font-family: 'Sancreek', serif;
+}
+
+.circus-stripes {
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.03) 0px,
+    rgba(255, 255, 255, 0.03) 40px,
+    transparent 40px,
+    transparent 80px
+  );
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(250, 204, 21, 0.4), inset 0 0 10px rgba(250, 204, 21, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(250, 204, 21, 0.75), inset 0 0 18px rgba(250, 204, 21, 0.35);
+  }
+}
+
+.marquee-border {
+  animation: pulseGlow 3.5s infinite ease-in-out;
+}
+
+.ticket-card {
+  position: relative;
+  background: rgba(18, 20, 51, 0.85);
+  backdrop-filter: blur(12px);
+  border: 2px dashed rgba(250, 204, 21, 0.5);
+}
