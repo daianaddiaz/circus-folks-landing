@@ -17,13 +17,14 @@ Landing page oficial promocional para **Circus Folks**, un videojuego indie de e
 
 ## Estructura del Proyecto
 
-# Workflow de build y despliegue a GitHub Pages
-# Imágenes y recursos gráficos importados por Vite
-# Íconos de redes y plataformas (Steam, Discord, etc.)
-# Portada, CTA principal, logo y destaque de Steam Wishlist
-# Historia ("El Gran Apagón") y canales de comunidad ("Join Us")
-# Cosméticos de bienvenida y apoyo en CafecitoApp
-# Mecánicas cooperativas y planificación de roles
-# Llamados a Wishlist, newsletter y contacto para sponsorship
-# Créditos del equipo, enlaces y cierre
-# Modales interactivos (tráiler, código promo, contacto)
+- Workflow de build y despliegue a GitHub Pages
+- Imágenes y recursos gráficos importados por Vite
+- Íconos de redes y plataformas (Steam, Discord, etc.)
+- Portada, CTA principal, logo y destaque de Steam Wishlist
+- Historia ("El Gran Apagón") y canales de comunidad ("Join Us")
+- Cosméticos de bienvenida y apoyo en CafecitoApp
+- Mecánicas cooperativas y planificación de roles
+- Llamados a Wishlist, newsletter y contacto para sponsorship
+- Créditos del equipo, enlaces y cierre
+- Modales interactivos (tráiler, código promo, contacto)
+
