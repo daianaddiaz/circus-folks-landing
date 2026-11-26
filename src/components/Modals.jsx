@@ -36,27 +36,35 @@ export default function Modals({ activeModal, onClose }) {
     }, 2000);
   };
 
-  return (
-    <div className="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm flex items-center justify-center p-4">
-      {activeModal === 'trailer' && (
-        <div className="relative w-full max-w-4xl bg-[#121433] border-2 border-yellow-400 rounded-2xl overflow-hidden">
-          <div className="flex items-center justify-between px-6 py-4 border-b border-white/15">
-            <span className="font-display-circus text-xl text-yellow-400">
-              CIRCUS FOLKS — TRAILER
-            </span>
-            <button type="button" onClick={onClose} className="text-white/70 hover:text-white cursor-pointer">
-              <X className="w-6 h-6" />
-            </button>
-          </div>
-          <div className="aspect-video bg-black flex flex-col items-center justify-center p-8 text-center">
-            <Film className="w-16 h-16 text-yellow-400 mb-4 animate-pulse" />
-            <p className="font-display-circus text-2xl text-white">PRÓXIMAMENTE</p>
-            <p className="text-sm text-white/70 mt-2 max-w-md">
-              Aquí puedes embeber el video oficial de YouTube o Vimeo cuando esté listo.
-            </p>
-          </div>
+ return (
+  <div className="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm flex items-center justify-center p-4">
+    {activeModal === 'trailer' && (
+      <div className="relative w-full max-w-4xl bg-[#121433] border-2 border-yellow-400 rounded-2xl overflow-hidden shadow-2xl">
+        <div className="flex items-center justify-between px-6 py-4 border-b border-white/15">
+          <span className="font-display-circus text-xl text-yellow-400">
+            CIRCUS FOLKS — TRAILER
+          </span>
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label="Cerrar tráiler"
+            className="text-white/70 hover:text-white cursor-pointer"
+          >
+            <X className="w-6 h-6" />
+          </button>
         </div>
-      )}
+        <div className="aspect-video bg-black">
+          <iframe
+            className="w-full h-full"
+            src="https://www.youtube.com/embed/5dXXl5VXyt4?autoplay=1&rel=0"
+            title="Circus Folks — Tráiler Oficial"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          />
+        </div>
+      </div>
+    )}
 
       {activeModal === 'wishlist' && (
         <div className="relative w-full max-w-md bg-[#121433] border-2 border-yellow-400 rounded-2xl p-6 sm:p-8 text-center space-y-5">
